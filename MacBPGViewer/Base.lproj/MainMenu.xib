@@ -91,7 +91,7 @@
                                     <action selector="saveDocument:" target="-1" id="teZ-XB-qJY"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
+                            <menuItem title="Export…" keyEquivalent="S" id="Bw7-FT-i3A">
                                 <connections>
                                     <action selector="saveDocumentAs:" target="-1" id="mDf-zr-I0C"/>
                                 </connections>
@@ -140,12 +140,6 @@
                             <menuItem title="Paste" keyEquivalent="v" id="gVA-U4-sdL">
                                 <connections>
                                     <action selector="paste:" target="-1" id="UvS-8e-Qdg"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="WeT-3V-zwk">
-                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                <connections>
-                                    <action selector="pasteAsPlainText:" target="-1" id="cEh-KX-wJQ"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Delete" id="pa3-QI-u2k">
@@ -335,6 +329,13 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
                         <items>
+                            <menuItem title="Show Info" keyEquivalent="i" id="tCz-xv-F0H"/>
+                            <menuItem isSeparatorItem="YES" id="SOV-Jm-pVN"/>
+                            <menuItem title="Actual Size" keyEquivalent="0" id="FBS-tn-EiB"/>
+                            <menuItem title="Zoom to Fit" keyEquivalent="9" id="Alr-HP-HKK"/>
+                            <menuItem title="Zoom In" keyEquivalent="+" id="5xX-wP-P30"/>
+                            <menuItem title="Zoom Out" keyEquivalent="-" id="mJD-Vc-8WV"/>
+                            <menuItem isSeparatorItem="YES" id="h9K-3w-pXx"/>
                             <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
                                 <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                 <connections>
