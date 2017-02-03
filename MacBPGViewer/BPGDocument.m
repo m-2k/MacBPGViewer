@@ -66,12 +66,8 @@
     NSRect frame = [window frame];
     frame.size = imageSize;
     [window setFrame:frame display:NO animate:NO];
-
     
     [imageView setImage:bpgImage];
-    
-
-
 }
 
 

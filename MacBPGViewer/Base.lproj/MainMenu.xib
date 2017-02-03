@@ -11,8 +11,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
-        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="Voe-Tx-rLC" customClass="MacBPGViewerAppDelegate"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="MacBPGViewer" id="1Xt-HY-uBw">
@@ -377,6 +376,13 @@
                             <menuItem title="MacBPGViewer Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1HR-dH-ntd"/>
+                            <menuItem title="BSD License" id="Azd-eO-IGw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showLicense:" target="Voe-Tx-rLC" id="tiP-rq-PeY"/>
                                 </connections>
                             </menuItem>
                         </items>

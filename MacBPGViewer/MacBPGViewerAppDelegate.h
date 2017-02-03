@@ -10,6 +10,7 @@
 
 @interface MacBPGViewerAppDelegate : NSObject <NSApplicationDelegate>
 
+- (IBAction)showLicense:(id)sender;
 
 @end
 

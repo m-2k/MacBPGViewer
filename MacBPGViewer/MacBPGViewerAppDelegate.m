@@ -23,5 +23,27 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction)showLicense:(id)sender {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"License.html" ofType:nil];
+    
+    NSURL *url = [NSURL URLWithString:@"http://"];
+    CFURLRef fromPathURL = NULL;
+    OSStatus err = LSGetApplicationForURL((__bridge CFURLRef)url, kLSRolesAll, NULL, &fromPathURL);
+    NSString *app = nil;
+    
+    if (fromPathURL) {
+        if (err == noErr) {
+            app = [(__bridge NSURL *)fromPathURL path];
+        }
+        CFRelease(fromPathURL);
+    }
+    
+    if (!app || err) {
+        NSLog(@"Unable to find default browser");
+        return;
+    }
+    
+    [[NSWorkspace sharedWorkspace] openFile:path withApplication:app];
+}
 
 @end

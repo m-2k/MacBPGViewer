@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4941E3C1E44E96500F6F223 /* License.html in Resources */ = {isa = PBXBuildFile; fileRef = F4941E3B1E44E96500F6F223 /* License.html */; };
 		F4EEF5E21E43477500B8D17F /* MacBPGViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E11E43477500B8D17F /* MacBPGViewerAppDelegate.m */; };
 		F4EEF5E51E43477500B8D17F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E41E43477500B8D17F /* main.m */; };
 		F4EEF5E81E43477500B8D17F /* BPGDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E71E43477500B8D17F /* BPGDocument.m */; };
@@ -31,6 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F4941E391E44E95300F6F223 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F4941E3A1E44E95900F6F223 /* src_loc_stats.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = src_loc_stats.sh; sourceTree = "<group>"; };
+		F4941E3B1E44E96500F6F223 /* License.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = License.html; sourceTree = "<group>"; };
+		F4941E3D1E44EB2100F6F223 /* TODO.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		F4EEF5DD1E43477500B8D17F /* MacBPGViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBPGViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EEF5E01E43477500B8D17F /* MacBPGViewerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacBPGViewerAppDelegate.h; sourceTree = "<group>"; };
 		F4EEF5E11E43477500B8D17F /* MacBPGViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacBPGViewerAppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +75,10 @@
 		F4EEF5D41E43477500B8D17F = {
 			isa = PBXGroup;
 			children = (
+				F4941E391E44E95300F6F223 /* README.md */,
+				F4941E3D1E44EB2100F6F223 /* TODO.txt */,
+				F4941E3B1E44E96500F6F223 /* License.html */,
+				F4941E3A1E44E95900F6F223 /* src_loc_stats.sh */,
 				F4EEF5DF1E43477500B8D17F /* MacBPGViewer */,
 				F4EEF5F91E4347A500B8D17F /* Frameworks */,
 				F4EEF5DE1E43477500B8D17F /* Products */,
@@ -166,6 +175,7 @@
 			files = (
 				F4EEF5ED1E43477500B8D17F /* Assets.xcassets in Resources */,
 				F4EEF5EB1E43477500B8D17F /* BPGDocument.xib in Resources */,
+				F4941E3C1E44E96500F6F223 /* License.html in Resources */,
 				F4EEF5F01E43477500B8D17F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
