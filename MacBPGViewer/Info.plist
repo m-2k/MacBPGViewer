@@ -18,11 +18,13 @@
 				<string>image/bpg</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>BPG image</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
-			<array/>
+			<array>
+				<string>public.bpg</string>
+			</array>
 			<key>LSTypeIsPackage</key>
 			<integer>0</integer>
 			<key>NSDocumentClass</key>

@@ -49,11 +49,11 @@
         return NO;
     }
     
-    NSData *headerMagic = [imageData subdataWithRange:NSMakeRange(0, 4)];
-    char magic[] = { 0x42, 0x50, 0x47, 0xFB };
-    NSData *expectedHeaderData = [NSData dataWithBytes:&magic length:4];
+    NSData *headerMagicData = [imageData subdataWithRange:NSMakeRange(0, 4)];
+    char magic[] = { 0x42, 0x50, 0x47, 0xFB }; // BPG magic header
+    NSData *expectedHeaderMagicData = [NSData dataWithBytes:&magic length:4];
     
-    return [headerMagic isEqualToData:expectedHeaderData];
+    return [headerMagicData isEqualToData:expectedHeaderMagicData];
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
