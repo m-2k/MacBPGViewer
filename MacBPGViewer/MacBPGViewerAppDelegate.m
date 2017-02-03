@@ -6,13 +6,13 @@
 //  Copyright © 2017 Sveinbjorn Thordarson. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MacBPGViewerAppDelegate.h"
 
-@interface AppDelegate ()
+@interface MacBPGViewerAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MacBPGViewerAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application

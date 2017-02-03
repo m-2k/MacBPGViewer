@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4EEF5E21E43477500B8D17F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E11E43477500B8D17F /* AppDelegate.m */; };
+		F4EEF5E21E43477500B8D17F /* MacBPGViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E11E43477500B8D17F /* MacBPGViewerAppDelegate.m */; };
 		F4EEF5E51E43477500B8D17F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E41E43477500B8D17F /* main.m */; };
-		F4EEF5E81E43477500B8D17F /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E71E43477500B8D17F /* Document.m */; };
-		F4EEF5EB1E43477500B8D17F /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4EEF5E91E43477500B8D17F /* Document.xib */; };
+		F4EEF5E81E43477500B8D17F /* BPGDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF5E71E43477500B8D17F /* BPGDocument.m */; };
+		F4EEF5EB1E43477500B8D17F /* BPGDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4EEF5E91E43477500B8D17F /* BPGDocument.xib */; };
 		F4EEF5ED1E43477500B8D17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EEF5EC1E43477500B8D17F /* Assets.xcassets */; };
 		F4EEF5F01E43477500B8D17F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4EEF5EE1E43477500B8D17F /* MainMenu.xib */; };
+		F4EEF5F81E4347A200B8D17F /* HCImageBPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EEF5F71E4347A200B8D17F /* HCImageBPG.framework */; };
+		F4EEF5FB1E43482200B8D17F /* HCImageBPG.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4EEF5F71E4347A200B8D17F /* HCImageBPG.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4EEF5FA1E43481A00B8D17F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4EEF5FB1E43482200B8D17F /* HCImageBPG.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F4EEF5DD1E43477500B8D17F /* MacBPGViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBPGViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4EEF5E01E43477500B8D17F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F4EEF5E11E43477500B8D17F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4EEF5E01E43477500B8D17F /* MacBPGViewerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacBPGViewerAppDelegate.h; sourceTree = "<group>"; };
+		F4EEF5E11E43477500B8D17F /* MacBPGViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacBPGViewerAppDelegate.m; sourceTree = "<group>"; };
 		F4EEF5E41E43477500B8D17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F4EEF5E61E43477500B8D17F /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		F4EEF5E71E43477500B8D17F /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		F4EEF5EA1E43477500B8D17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		F4EEF5E61E43477500B8D17F /* BPGDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPGDocument.h; sourceTree = "<group>"; };
+		F4EEF5E71E43477500B8D17F /* BPGDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPGDocument.m; sourceTree = "<group>"; };
+		F4EEF5EA1E43477500B8D17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BPGDocument.xib; sourceTree = "<group>"; };
 		F4EEF5EC1E43477500B8D17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4EEF5EF1E43477500B8D17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F4EEF5F11E43477500B8D17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EEF5F71E4347A200B8D17F /* HCImageBPG.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HCImageBPG.framework; path = Frameworks/HCImageBPG.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,16 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EEF5F81E4347A200B8D17F /* HCImageBPG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4941E381E44E51B00F6F223 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4EEF5E91E43477500B8D17F /* BPGDocument.xib */,
+				F4EEF5EC1E43477500B8D17F /* Assets.xcassets */,
+				F4EEF5EE1E43477500B8D17F /* MainMenu.xib */,
+				F4EEF5F11E43477500B8D17F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F4EEF5D41E43477500B8D17F = {
 			isa = PBXGroup;
 			children = (
 				F4EEF5DF1E43477500B8D17F /* MacBPGViewer */,
+				F4EEF5F91E4347A500B8D17F /* Frameworks */,
 				F4EEF5DE1E43477500B8D17F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,25 +87,22 @@
 		F4EEF5DF1E43477500B8D17F /* MacBPGViewer */ = {
 			isa = PBXGroup;
 			children = (
-				F4EEF5E01E43477500B8D17F /* AppDelegate.h */,
-				F4EEF5E11E43477500B8D17F /* AppDelegate.m */,
-				F4EEF5E61E43477500B8D17F /* Document.h */,
-				F4EEF5E71E43477500B8D17F /* Document.m */,
-				F4EEF5E91E43477500B8D17F /* Document.xib */,
-				F4EEF5EC1E43477500B8D17F /* Assets.xcassets */,
-				F4EEF5EE1E43477500B8D17F /* MainMenu.xib */,
-				F4EEF5F11E43477500B8D17F /* Info.plist */,
-				F4EEF5E31E43477500B8D17F /* Supporting Files */,
+				F4EEF5E41E43477500B8D17F /* main.m */,
+				F4EEF5E01E43477500B8D17F /* MacBPGViewerAppDelegate.h */,
+				F4EEF5E11E43477500B8D17F /* MacBPGViewerAppDelegate.m */,
+				F4EEF5E61E43477500B8D17F /* BPGDocument.h */,
+				F4EEF5E71E43477500B8D17F /* BPGDocument.m */,
+				F4941E381E44E51B00F6F223 /* Resources */,
 			);
 			path = MacBPGViewer;
 			sourceTree = "<group>";
 		};
-		F4EEF5E31E43477500B8D17F /* Supporting Files */ = {
+		F4EEF5F91E4347A500B8D17F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4EEF5E41E43477500B8D17F /* main.m */,
+				F4EEF5F71E4347A200B8D17F /* HCImageBPG.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +115,7 @@
 				F4EEF5D91E43477500B8D17F /* Sources */,
 				F4EEF5DA1E43477500B8D17F /* Frameworks */,
 				F4EEF5DB1E43477500B8D17F /* Resources */,
+				F4EEF5FA1E43481A00B8D17F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -138,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EEF5ED1E43477500B8D17F /* Assets.xcassets in Resources */,
-				F4EEF5EB1E43477500B8D17F /* Document.xib in Resources */,
+				F4EEF5EB1E43477500B8D17F /* BPGDocument.xib in Resources */,
 				F4EEF5F01E43477500B8D17F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,21 +177,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4EEF5E81E43477500B8D17F /* Document.m in Sources */,
+				F4EEF5E81E43477500B8D17F /* BPGDocument.m in Sources */,
 				F4EEF5E51E43477500B8D17F /* main.m in Sources */,
-				F4EEF5E21E43477500B8D17F /* AppDelegate.m in Sources */,
+				F4EEF5E21E43477500B8D17F /* MacBPGViewerAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4EEF5E91E43477500B8D17F /* Document.xib */ = {
+		F4EEF5E91E43477500B8D17F /* BPGDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F4EEF5EA1E43477500B8D17F /* Base */,
 			);
-			name = Document.xib;
+			name = BPGDocument.xib;
 			sourceTree = "<group>";
 		};
 		F4EEF5EE1E43477500B8D17F /* MainMenu.xib */ = {
@@ -270,8 +297,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/HCImageBPG.framework/Headers/";
 				INFOPLIST_FILE = MacBPGViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.MacBPGViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -282,8 +315,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/HCImageBPG.framework/Headers/";
 				INFOPLIST_FILE = MacBPGViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.MacBPGViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -308,6 +347,7 @@
 				F4EEF5F61E43477500B8D17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
