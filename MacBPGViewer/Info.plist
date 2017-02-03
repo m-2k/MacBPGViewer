@@ -57,5 +57,29 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.image</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>BPG image</string>
+			<key>UTTypeIconFile</key>
+			<array>
+				<string>BPGDocumentIcon.icns</string>
+			</array>
+			<key>UTTypeIdentifier</key>
+			<string>public.bpg</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bpg</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
