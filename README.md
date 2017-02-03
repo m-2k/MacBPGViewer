@@ -1,22 +1,28 @@
-<img align="right" src="images/macbpgviewer_icon.png" style="float: right; margin-left: 30px;" alt="MacBPGViewer Application Icon">
+<!--<img align="right" src="images/macbpgviewer_icon.png" style="float: right; margin-left: 30px;" alt="MacBPGViewer Application Icon">-->
+
+NB: This project isn't quite ready...
+
+----
+
 # MacBPGViewer
 
 MacBPGViewer is a native, open source <a href="http://bellard.org/bpg/">BPG</a> image viewer for Mac OS X. 
 
-BPG (Better Portable Graphics) is a new image format developed by <a href="http://www.bellard.org">Fabrice Bellard</a>. Its purpose is to replace the JPEG image format when quality or file size is an issue.
+<a href="http://bellard.org/bpg/">BPG</a> (Better Portable Graphics) is a new image format developed by <a href="http://www.bellard.org">Fabrice Bellard</a>. Its purpose is to replace the JPEG image format when quality or file size is an issue.
 
-You can download a pre-built binary of version 1.0 here: 
+<!--You can download a pre-built binary of version 1.0 here: 
 
-* [Download MacBPGViewer 1.1](http://sveinbjorn.org/files/software/macbpgviewer/MacBPGViewer.zip) (Intel 64-bit, 10.10 or later, ~1.9 MB)
+* [Download MacBPGViewer 1.0](http://sveinbjorn.org/files/software/macbpgviewer/MacBPGViewer.zip) (Intel 64-bit, 10.10 or later, ~500 KB)-->
 
 To learn more about the BPG image format, read [this page](http://bellard.org/bpg/).
 
 MacBPGViewer uses <a href="https://github.com/chuganzy/HCImage-BPG/">`HCImage-BPG`</a> for BPG decoding.
 
-## Screenshot
+<!--## Screenshot
 
-#<img src="images/macbpgviewer_screenshot.png" style="max-width:100%;" alt="MacBPGViewer Screenshot">
-
+<img src="images/macbpgviewer_screenshot.png" style="max-width:100%;" alt="MacBPGViewer Screenshot">
+-->
+ 
 ## License
 
 MacBPGViewer is open source software, available under the three-clause BSD license:
