@@ -44,18 +44,28 @@
     return @"BPGDocument";
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-    
-    if (data == nil) {
-        *outError = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileReadUnknownError userInfo:nil];
+- (BOOL)hasValidBPGMagicHeader:(NSData *)imageData {
+    if ([imageData length] < 4) {
         return NO;
     }
     
-    // TODO: add header magic validation
+    NSData *headerMagic = [imageData subdataWithRange:NSMakeRange(0, 4)];
+    char magic[] = { 0x42, 0x50, 0x47, 0xFB };
+    NSData *expectedHeaderData = [NSData dataWithBytes:&magic length:4];
+    
+    return [headerMagic isEqualToData:expectedHeaderData];
+}
+
+- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
+    
+    if (data == nil || [self hasValidBPGMagicHeader:data] == NO) {
+        *outError = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileReadCorruptFileError userInfo:nil];
+        return NO;
+    }
     
     bpgImage = [NSImage imageWithBPGData:data];
     if (bpgImage == nil) {
-        *outError = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileReadUnknownError userInfo:nil];
+        *outError = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileReadCorruptFileError userInfo:nil];
         return NO;
     }
     
